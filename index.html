@@ -107,7 +107,7 @@
 <li class="lielement"><img src="picture/textlogo.png" id="img-load" class="img-visible"/>
 </li>
 <li class="lielement">
-<img src="picture/location.png" class="icon">Music Academy Alwarpet
+<img src="picture/location.png" class="icon"><a href="https://goo.gl/maps/J1KJGbtL9Pp" target="_blank" style="color: white;">Music Academy Alwarpet</a>
 </img>
 </li>
 <li class="lielement">
@@ -193,13 +193,13 @@
 
 <footer>
     <div class="end">
-      <a class="btn" href="https://www.facebook.com/rotaractceg">
+      <a class="btn" href="https://www.facebook.com/rotaractceg" target="_blank">
         <i class="fab fa-facebook-f"></i>
       </a>
-      <a class="btn" href="https://twitter.com/rotaractceg">
+      <a class="btn" href="https://twitter.com/rotaractceg" target="_blank">
         <i class="fab fa-twitter"></i>
       </a>
-      <a class="btn" href="https://www.instagram.com/rotaractclubofceg/">
+      <a class="btn" href="https://www.instagram.com/rotaractclubofceg/" target="_blank">
         <i class="fab fa-instagram"></i>
       </a>
       </div>
@@ -208,7 +208,8 @@
 
 <script>
 	const year = (new Date().getFullYear());
-const fourthOfJuly = new Date(year, 2, 15).getTime();
+const fourthOfJuly = new Date("March 15, 2019 17:00:00").getTime();
+
 // countdown
 let timer = setInterval(function() {
 
@@ -218,6 +219,8 @@ let timer = setInterval(function() {
   // get the difference
   const diff = fourthOfJuly - today;
 
+	//console.log(today);
+	console.log(fourthOfJuly);
   // math
   let days = Math.floor(diff / (1000 * 60 * 60 * 24));
   let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
